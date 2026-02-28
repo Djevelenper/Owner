@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
-import SongDetailPage from './pages/SongDetailPage';
+import CampaignDetailPage from './pages/CampaignDetailPage';
 import ArtistDashboard from './pages/ArtistDashboard';
 import InvestorPortfolio from './pages/InvestorPortfolio';
 import ExplorePage from './pages/ExplorePage';
@@ -25,7 +25,7 @@ export default function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/songs/:id" element={<SongDetailPage />} />
+            <Route path="/campaigns/:id" element={<CampaignDetailPage />} />
             <Route path="/dashboard/artist" element={<ArtistDashboard />} />
             <Route path="/portfolio" element={<InvestorPortfolio />} />
           </Routes>
